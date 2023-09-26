@@ -9,6 +9,7 @@ import { MaterialModule } from './shared/material/material.module';
 import { NgxMaskDirective, NgxMaskPipe, provideNgxMask } from 'ngx-mask';
 import { ClienteModule } from './pages/cliente/cliente.module';
 import { NavbarComponent } from './shared/navbar/navbar.component';
+import { ContaModule } from './pages/conta/conta.module';
 
 
 @NgModule({
@@ -26,7 +27,8 @@ import { NavbarComponent } from './shared/navbar/navbar.component';
     MaterialModule,
     NgxMaskDirective,
     NgxMaskPipe,
-    ClienteModule
+    ClienteModule,
+    ContaModule
   ],
   providers: [provideNgxMask()],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
